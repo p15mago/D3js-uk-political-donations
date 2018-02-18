@@ -93,6 +93,7 @@ function start() {
 		.style("fill", function(d) { return fill(d.party); })
 		.on("mouseover", mouseover)
 		.on("mouseout", mouseout)
+		//click for search
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
@@ -308,7 +309,7 @@ function display(data) {
 	return start();
 }
 function search(d) { //search function 
-	//var donor = d.donor;
+	
 	window.open("https://www.google.com/search?q=" + donor);
 }
 		    
