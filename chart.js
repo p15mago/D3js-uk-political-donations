@@ -363,10 +363,7 @@ function mouseout() {
 		d3.select(".tooltip")
 			.style("display", "none");
 		}
-$('a').mouseenter(function() { //voice
-	responsiveVoice.cancel(); 
-	responsiveVoice.speak($(this).text()); 
-});
+
 	
 $(document).ready(function() {
 		d3.selectAll(".switch").on("click", function(d) {
