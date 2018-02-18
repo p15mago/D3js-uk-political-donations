@@ -306,7 +306,10 @@ function display(data) {
 
 	return start();
 }
-
+function search(d) {
+	window.open("https://www.google.com/search?q=" + donor);
+}
+		    
 function mouseover(d, i) {
 	// tooltip popup
 	var mosie = d3.select(this);
