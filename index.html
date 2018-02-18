@@ -32,7 +32,14 @@
     </script>
 </head>
 <!-- Add feature detection and noscript -->
-    
+    <audio id="sound" src="button_sound.mp3"></audio>
+    <a onclick = "playSound();"></a>
+    <script>
+        function playSound() {
+          var sound = document.getElementById("sound");
+          sound.play();
+      }
+    </script>
          
 <body>
 
@@ -41,13 +48,13 @@
     </header>
     <nav role="navigation">
         <ul>
-            <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
+            <li><a href="#" role="button" class="pure-button switch" id="all-donations" onclick = "playSound()">All money</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source" onclick = "playSound()">The public's purse</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-party">Split by party</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-party" onclick = "playSound()">Split by party</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type">Split by type of donor</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type" onclick = "playSound()">Split by type of donor</a>
             </li>
         </ul>
     </nav>
