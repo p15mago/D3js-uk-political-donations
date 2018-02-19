@@ -351,7 +351,7 @@ function mouseover(d, i) {
 		.html(infoBox)
 			.style("display","block");
 	
-	responsiveVoice.speak($(this).text());
+	responsiveVoice.speak((this).text());
 	}
 
 function mouseout() {
