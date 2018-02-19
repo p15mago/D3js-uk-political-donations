@@ -350,7 +350,7 @@ function mouseover(d, i) {
 		.html(infoBox)
 			.style("display","block");
 	
-	responsiveVoice.speak(donor,{volume: 2});
+	responsiveVoice.speak(donor,"UK English Male",{pitch: 2});
 	}
 
 function mouseout() {
