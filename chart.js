@@ -331,7 +331,7 @@ function mouseover(d, i) {
 	
 	// *******************************************
 	
-	responsiveVoice.speak($(this).text());   
+	//responsiveVoice.speak($(this).text());   
 	
 
 	
@@ -362,7 +362,7 @@ function mouseout() {
 
 		d3.select(".tooltip")
 			.style("display", "none");
-	responsiveVoice.cancel(); 
+	//responsiveVoice.cancel(); 
 		}
 
 	
