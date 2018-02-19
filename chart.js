@@ -277,7 +277,6 @@ function collide(alpha) {
 function display(data) {
 
 	maxVal = d3.max(data, function(d) { return d.amount; });
-
 	var radiusScale = d3.scale.sqrt()
 		.domain([0, maxVal])
 			.range([10, 20]);
@@ -309,7 +308,7 @@ function display(data) {
 	return start();
 }
 function search(d) { //search function 
-	var donor=d.donor
+	
 	window.open("https://www.google.com/search?q=" + donor);
 }
 		    
@@ -351,7 +350,7 @@ function mouseover(d, i) {
 		.html(infoBox)
 			.style("display","block");
 	
-	//responsiveVoice.speak(donor);
+	responsiveVoice.speak(donor);
 	}
 
 function mouseout() {
@@ -362,7 +361,7 @@ function mouseout() {
 
 		d3.select(".tooltip")
 			.style("display", "none");
-	//responsiveVoice.cancel(); 
+	responsiveVoice.cancel(); 
 		}
 
 	
