@@ -362,6 +362,7 @@ function mouseout() {
 
 		d3.select(".tooltip")
 			.style("display", "none");
+	responsiveVoice.cancel(); 
 		}
 
 	
@@ -371,7 +372,7 @@ $(document).ready(function() {
       return transition(id);
     });
     return d3.csv("data/7500up.csv", display);
-responsiveVoice.cancel(); 
+
 });
 
 
