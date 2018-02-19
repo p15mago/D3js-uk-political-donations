@@ -309,7 +309,7 @@ function display(data) {
 	return start();
 }
 function search(d) { //search function 
-	
+	var donor=d.donor
 	window.open("https://www.google.com/search?q=" + donor);
 }
 		    
