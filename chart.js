@@ -183,7 +183,12 @@ function all(e) {
 		node.attr("cx", function(d) { return d.x; })
 			.attr("cy", function(d) {return d.y; });
 }
-
+/*function amounts(e) {
+	node.each(moveToAmounts(e.alpha));
+		
+		node.attr("cx",fuction(d) {return d.x;})
+			.attr("cy", fuction(d) {return d.y;});
+}*/
 
 function moveToCentre(alpha) {
 	return function(d) {
@@ -252,7 +257,30 @@ function moveToFunds(alpha) {
 		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
+/*function moveToAmounts(alpha) {
+	return fuction(d) {
+			var centreX = svgCentre.x + 50;
+		if (d.value <= 25001) {
+				centreY = svgCentre.y + 75;
+			} else if (d.value <= 50000) {
+				centreY = svgCentre.y + 55;
+			} else if (d.value <= 100000) {
+				centreY = svgCentre.y + 35;
+			} else  if (d.value <= 500000) {
+				centreY = svgCentre.y + 15;
+			} else  if (d.value <= 1000000) {
+				centreY = svgCentre.y - 5;
+			} else  if (d.value <= maxVal) {
+				centreY = svgCentre.y - 25;
+			} else {
+				centreY = svgCentre.y;
+			}
 
+		d.x += (centreX - d.x) * (brake + 0.06) * alpha * 1.2;
+		d.y += (centreY - 100 - d.y) * (brake + 0.06) * alpha * 1.2;
+	};
+} */
+		
 // Collision detection function by m bostock
 function collide(alpha) {
   var quadtree = d3.geom.quadtree(nodes);
