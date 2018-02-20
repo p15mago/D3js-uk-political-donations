@@ -48,7 +48,7 @@ function transition(name) {
 		$("#view-donor-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
-		$("#view-amount-type").fadeOut(250);
+	//	$("#view-amount-type").fadeOut(250);
 		return total();
 		//location.reload();
 	}
@@ -57,7 +57,7 @@ function transition(name) {
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
-		$("#view-amount-type").fadeOut(250);
+	//	$("#view-amount-type").fadeOut(250);
 		$("#view-party-type").fadeIn(1000);
 		return partyGroup();
 	}
@@ -66,7 +66,7 @@ function transition(name) {
 		$("#value-scale").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
-		$("#view-amount-type").fadeOut(250);
+	//	$("#view-amount-type").fadeOut(250);
 		$("#view-donor-type").fadeIn(1000);
 		return donorType();
 	}
@@ -75,7 +75,7 @@ function transition(name) {
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
-		$("view-amount-type").fadeOut(250);
+	//	$("view-amount-type").fadeOut(250);
 		$("#view-source-type").fadeIn(1000);
 		return fundsType();
 	}
@@ -85,7 +85,7 @@ function transition(name) {
 		$("#view-donor-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
-		$("#view-amount-type").fadeIn(1000);
+	//	$("#view-amount-type").fadeIn(1000);
 		return amountType(); 
 	}
  }
@@ -156,13 +156,13 @@ function fundsType() {
 		.on("tick", types)
 		.start();
 }
-function amountType() {
+/*function amountType() {
 	force.gravity(0)
 		.friction(0.75)
 		.charge(function(d) { return -Math.pow(d.radius, 2.0) / 3; })
 		.on("tick", types)
 		.colourByParty();
-}
+}*/
 
 function parties(e) {
 	node.each(moveToParties(e.alpha));
@@ -193,12 +193,12 @@ function all(e) {
 		node.attr("cx", function(d) { return d.x; })
 			.attr("cy", function(d) {return d.y; });
 }
-function amounts(e) {
+/*function amounts(e) {
 	node.each(moveToAmounts(e.alpha));
 		
 		node.attr("cx",fuction(d) {return d.x;})
 			.attr("cy", fuction(d) {return d.y;});
-}
+}*/
 
 function moveToCentre(alpha) {
 	return function(d) {
@@ -267,7 +267,7 @@ function moveToFunds(alpha) {
 		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
-function moveToAmounts(alpha) {
+/*function moveToAmounts(alpha) {
 	return fuction(d) {
 		var centreY = svgCentre.y;
 		if (d.value <= 25001) {
@@ -291,7 +291,7 @@ function moveToAmounts(alpha) {
 		d.x += (centreX - d.x) * (brake + 0.06) * alpha * 1.2;
 		d.y += (centreY - d.y) * (brake + 0.06) * alpha * 1.2;
 	};
-} 
+} */
 		
 // Collision detection function by m bostock
 function collide(alpha) {
