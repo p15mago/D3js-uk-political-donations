@@ -56,7 +56,7 @@ function transition(name) {
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
-		$("#view-amount-type").fadeOut(250);
+	//	$("#view-amount-type").fadeOut(250);
 		$("#view-party-type").fadeIn(1000);
 		return partyGroup();
 	}
@@ -65,7 +65,7 @@ function transition(name) {
 		$("#value-scale").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
-		$("#view-amount-type").fadeOut(250);
+	//	$("#view-amount-type").fadeOut(250);
 		$("#view-donor-type").fadeIn(1000);
 		return donorType();
 	}
@@ -74,18 +74,18 @@ function transition(name) {
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
-		$("view-amount-type").fadeOut(250);
+	//	$("view-amount-type").fadeOut(250);
 		$("#view-source-type").fadeIn(1000);
 		return fundsType();
 	}
-	if (name === "group-by-amount-of-donation")
+/*	if (name === "group-by-amount-of-donation")
 		$("#initial-content").fadeOut(250);
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
 		$("#view-amount-type").fadeIn(1000);
-		return amountType(); 
+		return amountType(); */
 function start() {
 
 	node = nodeGroup.selectAll("circle")
@@ -183,13 +183,13 @@ function all(e) {
 		node.attr("cx", function(d) { return d.x; })
 			.attr("cy", function(d) {return d.y; });
 }
-function amounts(e) {
+/*function amounts(e) {
 	node.each(moveToAmounts(e.alpha));
 		
 		node.attr("cx",fuction(d) {return d.x;})
 			.attr("cy", fuction(d) {return d.y;});
 }
-
+*/
 function moveToCentre(alpha) {
 	return function(d) {
 		var centreX = svgCentre.x + 75;
@@ -257,7 +257,7 @@ function moveToFunds(alpha) {
 		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
-function moveToAmounts(alpha) {
+/*function moveToAmounts(alpha) {
 	return fuction(d) {
 			
 		if (d.value <= 25000) {
@@ -276,7 +276,7 @@ function moveToAmounts(alpha) {
 				centreX = svgCentre.x - 5;
 				centreY = svgCentre.y - 5;
 			} ;
-} 
+} */
 		
 // Collision detection function by m bostock
 function collide(alpha) {
