@@ -59,7 +59,31 @@ li {
 #public-money {
     left: 610px;
 }
-
+view-amount-type {
+    height: 100%;
+    left: 500px;
+    width: 370;
+} 
+#amount_25000
+{
+    top : 55px;
+}
+#amount_50000
+{
+    left: 200px;
+}
+#amount_100000
+{
+    left: 200px;
+}
+#amount_500000
+{
+    left: 200px;
+}
+#amount_1000000
+{   
+    left: 300px
+} 
 /* Party view */
 #conservative, #labour, #libdem { padding: 10px; }
 #conservative {
@@ -101,31 +125,6 @@ li {
     text-align: right;
     right: 0
 }
-/*#view-amount-type {
-    height: 100%;
-    left: 500px;
-    width: 370;
-} 
-#amount_25000
-{
-    top : 55px;
-}
-#amount_50000
-{
-    left: 200px;
-}
-#amount_100000
-{
-    left: 200px;
-}
-#amount_500000
-{
-    left: 200px;
-}
-#amount_1000000
-{   
-    left: 300px
-} */
 
 /* Value scale */
 
