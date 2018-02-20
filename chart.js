@@ -257,7 +257,7 @@ function moveToFunds(alpha) {
 		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
-/*function moveToAmounts(alpha) {
+function moveToAmounts(alpha) {
 	return fuction(d) {
 			
 		if (d.value <= 25000) {
@@ -275,8 +275,14 @@ function moveToFunds(alpha) {
 			} else  if (d.value <= 1000000) {
 				centreX = svgCentre.x - 5;
 				centreY = svgCentre.y - 5;
-			} ;
-} */
+			} else {
+				centreY = svgCentre.y;
+			}
+
+		d.x += (centreX - d.x) * (brake + 0.06) * alpha * 1.2;
+		d.y += (centreY - 100 - d.y) * (brake + 0.06) * alpha * 1.2;
+	};
+} 
 		
 // Collision detection function by m bostock
 function collide(alpha) {
