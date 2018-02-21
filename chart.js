@@ -156,13 +156,13 @@ function fundsType() {
 		.on("tick", types)
 		.start();
 }
-function amountType() {
+/*function amountType() {
 	force.gravity(0)
 		.friction(0.75)
 		.charge(function(d) { return -Math.pow(d.radius, 2.0) / 3; })
 		.on("tick", amounts)
 		.colourByParty();
-}
+}*/
 
 function parties(e) {
 	node.each(moveToParties(e.alpha));
@@ -193,12 +193,12 @@ function all(e) {
 		node.attr("cx", function(d) { return d.x; })
 			.attr("cy", function(d) {return d.y; });
 }
-function amounts(e) {
+/*function amounts(e) {
 	node.each(moveToAmounts(e.alpha));
 		
 		node.attr("cx",fuction(d) {return d.x;})
 			.attr("cy", fuction(d) {return d.y;});
-}
+}*/
 
 function moveToCentre(alpha) {
 	return function(d) {
@@ -267,7 +267,7 @@ function moveToFunds(alpha) {
 		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
-function moveToAmounts(alpha) {
+/*function moveToAmounts(alpha) {
 	return fuction(d) {
 		var centreY = svgCentre.y;
 		if (d.value <= 25001) {
@@ -276,10 +276,8 @@ function moveToAmounts(alpha) {
 			        centreX = svgCentre.x + 75;
 			} else if (d.value <= 100001) {
 				centreX = svgCentre.x + 35;
-				
 			} else  if (d.value <= 500001) {
 				centreX = svgCentre.x + 15;
-				
 			} else  if (d.value <= 1000001) {
 				centreX = svgCentre.x +5 5;
 			} else if (d.value<= maxVal) {	
@@ -291,7 +289,7 @@ function moveToAmounts(alpha) {
 		d.x += (centreX - d.x) * (brake + 0.06) * alpha * 1.2;
 		d.y += (centreY - d.y) * (brake + 0.06) * alpha * 1.2;
 	};
-} 
+} */
 		
 // Collision detection function by m bostock
 function collide(alpha) {
