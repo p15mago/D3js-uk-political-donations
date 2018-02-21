@@ -280,7 +280,7 @@ function moveToAmounts(alpha) {
 			} else  if (d.value <= 500001) {
 				centreX = svgCentre.x + 100;
 			} else  if (d.value <= 1000001) {
-				centreX = svgCentre.x +55;
+				centreX = svgCentre.x +80;
 			} else if (d.value<= maxVal) {	
 				centreX =svgCentre.x;
 			} else {
