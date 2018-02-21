@@ -31,7 +31,7 @@ li {
 }
 
 /* View containers */
-#initial-content, #view-source-type,#view-amount-type {
+#initial-content, #view-source-type,#view-amount-type{
     left: 650px;
     width: 400px;
 }
@@ -39,7 +39,43 @@ li {
     left: 650px;
     width: 272px;
 }
-
+    
+#amount_25000 {
+    top:200px;
+    left:-200px;
+    width:50px;
+    position:absolute;
+}       
+#amount_50000 {
+    top:200px;
+    left:-250px;
+    width:50px;
+    position:absolute;
+}
+#amount_100000 {
+    top:200px;
+    left:-150px;
+    width:50px;
+    position:absolute;
+}
+#amount_500000 {
+    top:200px;
+    left:-90px;
+    width:50px;
+    position:absolute;
+}
+#amount_1000000 {
+    top:200px;
+    left:-80px;
+    width:50px;
+    position:absolute;
+}
+#amount_over {
+    top:200px;
+    left:-55px;
+    width:50px;
+    position:absolute;
+}
 /* Public or private funds view */
 
 #public-or-private-money {
@@ -60,36 +96,6 @@ li {
     left: 610px;
 }
 
-/*#amount_25000
-{   position: absolute;
-    top: 200px;
-    left: -200px; 
-}
-#amount_50000
-{   position: absolute;
-    top: 200px;
-    left: -100px;
-}
-#amount_100000
-{   position: absolute;
-    top: 200px;
-    left: -50px;
-}
-#amount_500000
-{   position: absolute;
-    top: 200px;
-    left: 20px;
-}
-#amount_1000000
-{   position: absolute;
-    top: 200px;
-    left: 100px
-} 
-#amount_over
-{   position: absolute;
-    top: 200px;
-    left: 100px;
-}*/
 /* Party view */
 #conservative, #labour, #libdem { padding: 10px; }
 #conservative {
