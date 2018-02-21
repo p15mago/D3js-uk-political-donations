@@ -31,7 +31,7 @@ li {
 }
 
 /* View containers */
-#initial-content, #view-source-type {
+#initial-content, #view-source-type,#view-amount-type {
     left: 650px;
     width: 400px;
 }
@@ -59,11 +59,7 @@ li {
 #public-money {
     left: 610px;
 }
-#view-amount-type {
-    height: 100%;
-    left: 500px;
-    width: 400;
-} 
+
 #amount_25000
 {   position: absolute;
     top: 200px;
