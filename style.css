@@ -59,7 +59,7 @@ li {
 #public-money {
     left: 610px;
 }
-/*#view-amount-type {
+#view-amount-type {
     height: 100%;
     left: 500px;
     width: 400;
@@ -93,7 +93,7 @@ li {
 {   position: absolute;
     top: 200px;
     left: 100px;
-}*/
+}
 /* Party view */
 #conservative, #labour, #libdem { padding: 10px; }
 #conservative {
