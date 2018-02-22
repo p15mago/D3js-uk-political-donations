@@ -54,13 +54,13 @@ li {
 }
 #amount_100000 {
     top:240px;
-    left: 550px;
+    left: 525px;
     width:50px;
     position:absolute;
 }
 #amount_500000 {
-    top:240px;
-    left: 500px;
+    top: 240px;
+    left: 475px;
     width:50px;
     position:absolute;
 }
