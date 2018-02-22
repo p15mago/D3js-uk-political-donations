@@ -41,7 +41,7 @@ li {
 }
     
 #amount_25000 {
-    top:280px;
+    top:300px;
     left: 650px;
     width:50px;
     position:absolute;
@@ -53,26 +53,26 @@ li {
     position:absolute;
 }
 #amount_100000 {
-    top:250px;
+    top:240px;
     left: 550px;
     width:50px;
     position:absolute;
 }
 #amount_500000 {
     top:240px;
-    left: 200px;
+    left: 500px;
     width:50px;
     position:absolute;
 }
 #amount_1000000 {
     top:230px;
-    left: 100px;
+    left: 400px;
     width:50px;
     position:absolute;
 }
 #amount_over {
     top:220px;
-    left: 30px;
+    left: 80px;
     width:50px;
     position:absolute;
 }
