@@ -41,14 +41,14 @@ li {
 }
     
 #amount_25000 {
-    top:300px;
+    top:350px;
     left: 650px;
     width:50px;
     position:absolute;
 }       
 #amount_50000 {
     top:260px;
-    left: 600px;
+    left: 550px;
     width:50px;
     position:absolute;
 }
