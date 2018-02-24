@@ -41,13 +41,13 @@ li {
 }
     
 #amount_25000 {
-    top:350px;
+    top:240px;
     left: 650px;
     width:50px;
     position:absolute;
 }       
 #amount_50000 {
-    top:285px;
+    top:240px;
     left: 585px;
     width:50px;
     position:absolute;
@@ -65,13 +65,13 @@ li {
     position:absolute;
 }
 #amount_1000000 {
-    top:230px;
+    top:240px;
     left: 350px;
     width:50px;
     position:absolute;
 }
 #amount_over {
-    top:220px;
+    top:240px;
     left: 90px;
     width:50px;
     position:absolute;
