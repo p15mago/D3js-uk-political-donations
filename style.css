@@ -60,7 +60,7 @@ li {
 }
 #amount_500000 {
     top: 240px;
-    left: 420px;
+    left: 425px;
     width:50px;
     position:absolute;
 }
@@ -72,7 +72,7 @@ li {
 }
 #amount_over {
     top:240px;
-    left: 100px;
+    left: 150px;
     width:50px;
     position:absolute;
 }
