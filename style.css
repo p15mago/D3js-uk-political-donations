@@ -47,14 +47,14 @@ li {
     position:absolute;
 }       
 #amount_50000 {
-    top:280px;
-    left: 580px;
+    top:285px;
+    left: 585px;
     width:50px;
     position:absolute;
 }
 #amount_100000 {
     top:240px;
-    left: 520px;
+    left: 525px;
     width:50px;
     position:absolute;
 }
