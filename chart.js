@@ -400,6 +400,16 @@ function mouseover(d, i) {
 			.style("display","block");
 	
 	responsiveVoice.speak(donor + " " + amount + "£","UK English Male",{volume: 1});
+	var image = document.createElement("img");
+
+	image.src = imageFile;
+
+	image.width = 42;
+
+	image.height = 42;
+
+	document.getElementById("image_donors").appendChild(image);
+		
 	}
 
 function mouseout() {
