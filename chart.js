@@ -407,7 +407,7 @@ function mouseover(d, i) {
 	image.width = 42;
 
 	image.height = 42;
-
+	image.setAttribute("onerror",'this.src=\"https://github.com/favicon.ico\";');
 	document.getElementById("image_donors").appendChild(image);
 		
 	}
